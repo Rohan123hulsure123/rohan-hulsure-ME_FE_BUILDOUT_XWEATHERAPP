@@ -4,7 +4,7 @@ const key = "624a02b1b8d54df3a44152348232710";
 
 function Card({ name, value }) {
   return (
-    <div className="weather-cards">
+    <div className="weather-card">
       <b>{name}</b>
       <p>{value}</p>
     </div>
@@ -64,7 +64,7 @@ export default function App() {
       </form>
       {loading && <p>Loading data...</p>}
       {data.current && !loading && (
-        <div className="cards">
+        <div className="weather-cards">
           <Card name={"Temperature"} value={data?.current?.temp_c + "°C"} />
           <Card name={"Humidity"} value={data?.current?.humidity + "%"} />
           <Card name={"Condition"} value={data?.current?.condition.text} />
