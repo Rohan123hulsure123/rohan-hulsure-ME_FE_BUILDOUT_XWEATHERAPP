@@ -4,7 +4,7 @@ const key = "624a02b1b8d54df3a44152348232710";
 
 function Card({ name, value }) {
   return (
-    <div className="weather-card">
+    <div className="weather-cards">
       <b>{name}</b>
       <p>{value}</p>
     </div>
